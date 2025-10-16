@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start Small. Dream Big. Wear It.</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM2BN80769"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-ZM2BN80769');</script>
+    
+    
+    <style>
+        /* 1. Global Reset & Gradient Background */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffffff, #e6f0ff); /* Light Blue Gradient */
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        } 
+        .container { 
+            max-width: 960px; /* Wider container for better grid display */
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: left;
+        } 
+        
+        /* 3. Responsive Grid: 1 column on mobile, 2 columns on desktop/tablet */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 column on mobile */
+            gap: 20px;
+        }
+        @media(min-width: 600px){
+            .grid {
+                grid-template-columns: 1fr 1fr; /* 2 columns on desktop/tablet */
+            }
+            /* Smart Centering for Odd Grids (3, 5 items) - Forces last item to span and center */
+            .col-span-2-centered {
+                grid-column: 1 / span 2; /* Span both columns */
+                justify-self: center; /* Center the card itself within the span */
+                max-width: 450px; /* Limit its width so it doesn't stretch the whole container */
+            }
+        }
+
+        /* 2. Cards and Hover Effect */
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadein 0.8s ease; 
+            opacity: 0; 
+            animation-fill-mode: forwards; 
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.01); 
+            box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%; 
+            height: auto;
+            display: block;
+        }
+        .card a {
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Animation for staggered load */
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* 6. CTA Button */
+        .cta {
+            display: block; 
+            width: fit-content;
+            margin: 30px 0; 
+            background: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .cta:hover { 
+            background: #333; 
+            transform: scale(1.05); 
+        }
+
+        /* 5. Text Styling */
+        h1 {
+            color: #1a1a1a;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p.footer-text {
+            color: #666; 
+            margin-top: 12px; 
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- 5. Smart Headline -->
+        <h1>Start Small. Dream Big. Wear It.</h1>
+
+        <!-- 3. The Grid of Products -->
+        <div class="grid">
+            
+        <div class="card " style="animation-delay: 0.0s;">
+            <a href="https://john22bmaaatthew34-ui.github.io/google/redirect_1_pyjjs5rpufor.html" target="_blank">
+                <img src="https://john22bmaaatthew34-ui.github.io/google/snippet_1_pyjjs5rpufor.png" alt="Design 1 Click to Shop" />
+            </a>
+        </div>
+
+        <div class="card " style="animation-delay: 0.1s;">
+            <a href="https://john22bmaaatthew34-ui.github.io/google/redirect_2_pyjjs5rpufor.html" target="_blank">
+                <img src="https://john22bmaaatthew34-ui.github.io/google/snippet_2_pyjjs5rpufor.png" alt="Design 2 Click to Shop" />
+            </a>
+        </div>
+
+        </div>
+        
+        <!-- 6. CTA Button - يستخدم رابط المتجر الرئيسي الثابت -->
+        <a href="https://my-store-1060ef0.creator-spring.com" class="cta" target="_blank">Browse More Designs</a>
+        
+        <p class="footer-text">Click any design to wear your attitude 🛒</p>
+    </div>
+</body>
+</html>
